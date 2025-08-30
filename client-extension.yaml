@@ -1,0 +1,16 @@
+assemble:
+  - from: vite-build
+    into: static
+
+vite-app-custom-element-liferay-cx:
+  type: customElement
+  name: Vite App Custom Element Liferay CX
+  portletCategoryName: category.client-extensions
+  instanceable: true
+  htmlElementName: vite-app-custom-element-liferay-cx
+  friendlyURLMapping: vite-app-custom-element-liferay-cx
+  useESM: true
+  urls:
+    - assets/*.js
+  cssURLs:
+    - assets/*.css
